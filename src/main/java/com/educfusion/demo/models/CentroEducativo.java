@@ -2,14 +2,15 @@ package com.educfusion.demo.models;
 
 import jakarta.persistence.*;
 import lombok.*;
+import com.educfusion.demo.models.CategoriaCentroEducativo;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Table(name= "centro_educativo")
 public class CentroEducativo {
-		
-	@Id
+
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID_Centro")
     private Integer id;

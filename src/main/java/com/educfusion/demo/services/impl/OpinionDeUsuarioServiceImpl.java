@@ -7,6 +7,8 @@ import com.educfusion.demo.models.OpinionDeUsuario;
 import com.educfusion.demo.repositories.OpinionDeUsuarioRepository;
 import com.educfusion.demo.services.OpinionDeUsuarioService;
 
+import jakarta.transaction.Transactional;
+
 import java.util.List;
 
 @Service
@@ -25,6 +27,7 @@ public class OpinionDeUsuarioServiceImpl implements OpinionDeUsuarioService {
         return opinionDeUsuarioRepository.findById(id).orElse(null);
     }
 
+    @Transactional
     @Override
     public OpinionDeUsuario save(OpinionDeUsuario opinion) {
         return opinionDeUsuarioRepository.save(opinion);

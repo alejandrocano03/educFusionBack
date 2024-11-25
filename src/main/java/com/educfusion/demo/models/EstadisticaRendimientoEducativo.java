@@ -19,7 +19,7 @@ public class EstadisticaRendimientoEducativo {
     private CentroEducativo centro;
 
     @Column(name = "Año_Academico")
-    private Integer añoAcademico;
+    private Integer anoAcademico;
 
     @Column(name = "Nivel_Educativo")
     private String nivelEducativo;
@@ -53,12 +53,12 @@ public class EstadisticaRendimientoEducativo {
 		this.centro = centro;
 	}
 
-	public Integer getAñoAcademico() {
-		return añoAcademico;
+	public Integer getAnoAcademico() {
+		return anoAcademico;
 	}
 
-	public void setAñoAcademico(Integer añoAcademico) {
-		this.añoAcademico = añoAcademico;
+	public void setAnoAcademico(Integer anoAcademico) {
+		this.anoAcademico = anoAcademico;
 	}
 
 	public String getNivelEducativo() {

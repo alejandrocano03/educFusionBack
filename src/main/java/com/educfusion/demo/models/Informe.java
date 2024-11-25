@@ -1,17 +1,21 @@
 package com.educfusion.demo.models;
-import java.util.Date;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Date;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Table(name = "informe")
 public class Informe {
-	
-	
-	@Id
+
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID_Informe")
     private Integer id;
@@ -33,33 +37,34 @@ public class Informe {
     @ManyToOne
     @JoinColumn(name = "Autor_Informe")
     private Usuario autorInforme;
-    
-    //Getters y Setters
-	public Integer getId() {
-		return id;
-	}
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    // Getters y Setters
 
-	public CentroEducativo getCentro() {
-		return centro;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public void setCentro(CentroEducativo centro) {
-		this.centro = centro;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public String getTipoInforme() {
-		return tipoInforme;
-	}
+    public CentroEducativo getCentro() {
+        return centro;
+    }
 
-	public void setTipoInforme(String tipoInforme) {
-		this.tipoInforme = tipoInforme;
-	}
+    public void setCentro(CentroEducativo centro) {
+        this.centro = centro;
+    }
 
-	public String getDatosIncluidos() {
+    public String getTipoInforme() {
+        return tipoInforme;
+    }
+
+    public void setTipoInforme(String tipoInforme) {
+        this.tipoInforme = tipoInforme;
+    }
+
+    public String getDatosIncluidos() {
 		return datosIncluidos;
 	}
 
@@ -68,20 +73,18 @@ public class Informe {
 	}
 
 	public Date getFechaGeneracion() {
-		return fechaGeneracion;
-	}
+        return fechaGeneracion;
+    }
 
-	public void setFechaGeneracion(Date fechaGeneracion) {
-		this.fechaGeneracion = fechaGeneracion;
-	}
+    public void setFechaGeneracion(Date fechaGeneracion) {
+        this.fechaGeneracion = fechaGeneracion;
+    }
 
-	public Usuario getAutorInforme() {
-		return autorInforme;
-	}
+    public Usuario getAutorInforme() {
+        return autorInforme;
+    }
 
-	public void setAutorInforme(Usuario autorInforme) {
-		this.autorInforme = autorInforme;
-	}
-    
-    
+    public void setAutorInforme(Usuario autorInforme) {
+        this.autorInforme = autorInforme;
+    }
 }

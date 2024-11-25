@@ -47,8 +47,8 @@ public class EstadisticaRendimientoEducativoController {
     }
 
     @GetMapping("/filter/año")
-    public ResponseEntity<List<EstadisticaRendimientoEducativo>> filterByAño(@RequestParam Integer año) {
-        List<EstadisticaRendimientoEducativo> filteredEstadisticas = estadisticaService.filterByAñoAcademico(año);
+    public ResponseEntity<List<EstadisticaRendimientoEducativo>> filterByAño(@RequestParam Integer ano) {
+        List<EstadisticaRendimientoEducativo> filteredEstadisticas = estadisticaService.filterByAnoAcademico(ano);
         return ResponseEntity.ok(filteredEstadisticas);
     }
 

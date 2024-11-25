@@ -41,8 +41,8 @@ public class EstadisticaRendimientoEducativoServiceImpl implements EstadisticaRe
     }
 
     @Override
-    public List<EstadisticaRendimientoEducativo> filterByAñoAcademico(Integer añoAcademico) {
-        return estadisticaRendimientoEducativoRepository.findByAñoAcademico(añoAcademico);
+    public List<EstadisticaRendimientoEducativo> filterByAnoAcademico(Integer anoAcademico) {
+        return estadisticaRendimientoEducativoRepository.findByAnoAcademico(anoAcademico);
     }
 
     @Override

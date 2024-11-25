@@ -10,6 +10,6 @@ import com.educfusion.demo.models.EstadisticaRendimientoEducativo;
 @Repository
 public interface EstadisticaRendimientoEducativoRepository extends JpaRepository<EstadisticaRendimientoEducativo, Integer> {
     List<EstadisticaRendimientoEducativo> findByCentro_Id(Integer centroId);
-    List<EstadisticaRendimientoEducativo> findByAñoAcademico(Integer añoAcademico);
+    List<EstadisticaRendimientoEducativo> findByAnoAcademico(Integer anoAcademico);
     List<EstadisticaRendimientoEducativo> findByNivelEducativo(String nivelEducativo);
 }

@@ -15,7 +15,7 @@ public class InformeController {
 
     @Autowired
     private InformeService informeService;
-
+    
     @GetMapping
     public ResponseEntity<List<Informe>> getAllInformes() {
         List<Informe> informes = informeService.findAll(); 
@@ -29,10 +29,13 @@ public class InformeController {
     }
 
     @PostMapping
-    public ResponseEntity<Informe> createInforme(@RequestBody Informe informe) {
-        Informe savedInforme = informeService.save(informe);
-        return ResponseEntity.ok(savedInforme);
+    public ResponseEntity<Informe> crearInforme(@RequestBody Informe informe) {
+        informeService.save(informe);
+        return ResponseEntity.ok(informe);
     }
+
+
+
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteInforme(@PathVariable Integer id) {

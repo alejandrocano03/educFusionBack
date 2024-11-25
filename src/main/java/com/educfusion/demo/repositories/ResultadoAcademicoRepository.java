@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public interface ResultadoAcademicoRepository extends JpaRepository<ResultadoAcademico, Integer> {
     List<ResultadoAcademico> findByCentroId(Integer centroId);
-    List<ResultadoAcademico> findByAñoAcademico(Integer añoAcademico);
+    List<ResultadoAcademico> findByAnoAcademico(Integer anoAcademico);
     List<ResultadoAcademico> findByNivelEducativo(String nivelEducativo);
 }
 

@@ -10,6 +10,6 @@ public interface EstadisticaRendimientoEducativoService {
     EstadisticaRendimientoEducativo save(EstadisticaRendimientoEducativo estadistica);
     void deleteById(Integer id);
     List<EstadisticaRendimientoEducativo> filterByCentroId(Integer centroId);
-    List<EstadisticaRendimientoEducativo> filterByAñoAcademico(Integer añoAcademico);
+    List<EstadisticaRendimientoEducativo> filterByAnoAcademico(Integer anoAcademico);
     List<EstadisticaRendimientoEducativo> filterByNivelEducativo(String nivelEducativo);
 }

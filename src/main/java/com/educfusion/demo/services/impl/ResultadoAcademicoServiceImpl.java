@@ -41,8 +41,8 @@ public class ResultadoAcademicoServiceImpl implements ResultadoAcademicoService 
     }
 
     @Override
-    public List<ResultadoAcademico> findByAñoAcademico(Integer añoAcademico) {
-        return resultadoAcademicoRepository.findByAñoAcademico(añoAcademico);
+    public List<ResultadoAcademico> findByAñoAcademico(Integer anoAcademico) {
+        return resultadoAcademicoRepository.findByAnoAcademico(anoAcademico);
     }
 
     @Override
